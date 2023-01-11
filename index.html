@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Thí nghiệm - Luận Văn</title>
+
+</head>
+
+<body>
+    <div>Motor 1</div>
+    <button id="nextMotor1">Down</button>
+    <button id="backMotor1">Up</button>
+    <div>Motor 2</div>
+    <button id="nextMotor2">Next</button>
+    <button id="backMotor2">Back</button>
+    <button id="bothMotor2">Both</button>
+
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC1ZBTqMnWPFe7nx57DLRJs1yD-2SDLzHc",
+            databaseURL: "https://thanhgiau170297-default-rtdb.asia-southeast1.firebasedatabase.app",
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.database();
+    </script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
